@@ -46,7 +46,7 @@ function getInterlocutors(id, callback) {
 * `GET /api/message/:id` - отримати повідомлення з конкретним id [Скріншот Postman](http://prntscr.com/k6gyra)
 
      
-* `PUT  /api/message/:id` - змінити дані повідомлення з конкретним id [Скріншот Postman](http://prntscr.com/k6gzlo)
+* `PUT  /api/message/:id` - змінити дані повідомлення з конкретним id [Скріншот Postman](http://prntscr.com/k6hau1)
 
 * `DELETE /api/message/:id` - видалити повідомлення з конкретним id [Скріншот Postman](http://prntscr.com/k6h0ho)
 
