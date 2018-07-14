@@ -55,4 +55,5 @@ function getInterlocutors(id, callback) {
 ## [Postman Запити](https://documenter.getpostman.com/view/4815819/RWMCtpF1)
 
 
-![alt text](https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/768118b36f06c94b0306958b980558e6915839447e859fe16906e29d683976f0 "Postman")
+[![alt text](https://res.cloudinary.com/postman/image/upload/w_152,h_56,c_fit,f_auto,t_team_logo/v1/team/768118b36f06c94b0306958b980558e6915839447e859fe16906e29d683976f0 "Postman")](https://documenter.getpostman.com/view/4815819/RWMCtpF1)
+
