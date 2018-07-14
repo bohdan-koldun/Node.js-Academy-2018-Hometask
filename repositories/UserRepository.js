@@ -10,6 +10,8 @@ function UserRepository() {
 
 Repository.prototype.getInterlocutors = getInterlocutors;
 
+
+// витаскуємо з БД всіх спврозмовників користувача із id
 function getInterlocutors(id, callback) {
   let model = this.model;
 

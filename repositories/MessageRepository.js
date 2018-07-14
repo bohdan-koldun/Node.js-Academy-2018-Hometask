@@ -6,8 +6,6 @@ function MessageRepository() {
   this.model = Message;
 }
 
-
- 
 MessageRepository.prototype = new Repository();
 
 module.exports = new MessageRepository();
