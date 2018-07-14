@@ -12,7 +12,7 @@
 
 
 ```javascript
-//отримуємо список співрозмовників
+//отримуємо список співрозмовників ./repositories/UserRepository.js
 function getInterlocutors(id, callback) {
   let model = this.model;
 
