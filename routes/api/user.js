@@ -25,6 +25,7 @@ router.get("/:id", (req, res, next) => {
   });
 });
 
+// роут, який повертає всіх користувачів, з якими спілкувався користувач з даними id.
 router.get("/interlocutors/:id", (req, res, next) => {
   userService.findInterlocutors(req.params.id, (err, data) => {
     if (!err) {
@@ -40,11 +41,11 @@ router.get("/interlocutors/:id", (req, res, next) => {
 router.post("/", (req, res, next) => {
 
   let newUser = req.body;
-  userService.createOne( newUser, (err, data) => {
+  userService.createOne(newUser, (err, data) => {
     if (!err) {
       res.data = data;
       res.json(res.data);
-     
+
     } else {
       res.status(400);
       res.end();
