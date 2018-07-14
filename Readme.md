@@ -11,7 +11,8 @@
 * `GET /api/user/interlocutors/:id` - отримати список всіх співрозмовників користувача з конкретним id [Скріншот Postman](http://prntscr.com/k6gsud)
 
 
-```function getInterlocutors(id, callback) {
+```javascript
+function getInterlocutors(id, callback) {
   let model = this.model;
 
   Message.find(
@@ -26,7 +27,8 @@
         );
       });
 
-}```
+}
+```
 
      
 * `PUT  /api/user/:id` - змінити дані користувача з конкретним id [Скріншот Postman](http://prntscr.com/k6gtts)
