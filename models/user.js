@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 //описуємо схему користвача чату
-const userSchema = mongoose.Schema({
+const userSchema = Schema({
   name: String,
   phone: String
 });

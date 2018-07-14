@@ -1,9 +1,10 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 //описуємо схему повідомлення чату
-const messageSchema = mongoose.Schema({
-    senderId: String,
-    receiverId: String,
+const messageSchema = Schema({
+    senderId: { type: Schema.Types.ObjectId, ref: 'User' },
+    receiverId: { type: Schema.Types.ObjectId, ref: 'User' },
     message: String
 });
 

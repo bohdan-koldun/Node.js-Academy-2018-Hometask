@@ -24,6 +24,7 @@ module.exports = {
       callback(err, data);
     });
   },
+  
   updateOne: (id, updateObj, callback) => {
     MessageRepository.updateById( id, updateObj, (err, data) => {
       callback(err, data);

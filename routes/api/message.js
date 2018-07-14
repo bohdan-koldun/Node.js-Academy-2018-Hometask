@@ -28,6 +28,7 @@ router.get("/:id", (req, res, next) => {
 router.post("/", (req, res, next) => {
 
   let newMessage = req.body;
+
   messageService.createOne( newMessage, (err, data) => {
     if (!err) {
       res.data = data;

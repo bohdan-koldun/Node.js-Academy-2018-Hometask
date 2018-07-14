@@ -13,19 +13,25 @@ module.exports = {
     });
   },
 
+  findInterlocutors: (id, callback) => {
+    UserRepository.getInterlocutors(id, (err, data) => {
+      callback(err, data);
+    });
+  },
+
   createOne: (newObj, callback) => {
-    UserRepository.saveNew( newObj, (err, data) => {
+    UserRepository.saveNew(newObj, (err, data) => {
       callback(err, data);
     });
   },
 
   deleteOne: (id, callback) => {
-    UserRepository.deleteById( id, (err, data) => {
+    UserRepository.deleteById(id, (err, data) => {
       callback(err, data);
     });
   },
   updateOne: (id, updateObj, callback) => {
-    UserRepository.updateById( id, updateObj, (err, data) => {
+    UserRepository.updateById(id, updateObj, (err, data) => {
       callback(err, data);
     });
   }

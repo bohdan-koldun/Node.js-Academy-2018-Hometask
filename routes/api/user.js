@@ -25,8 +25,8 @@ router.get("/:id", (req, res, next) => {
   });
 });
 
-router.get("/:senderId/:receiverId", (req, res, next) => {
-  userService.findOne(req.params.id, (err, data) => {
+router.get("/interlocutors/:id", (req, res, next) => {
+  userService.findInterlocutors(req.params.id, (err, data) => {
     if (!err) {
       res.data = data;
       res.json(res.data);
