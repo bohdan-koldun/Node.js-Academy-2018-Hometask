@@ -12,6 +12,7 @@
 
 
 ```javascript
+//отримуємо список співрозмовників
 function getInterlocutors(id, callback) {
   let model = this.model;
 
